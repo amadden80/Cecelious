@@ -1,0 +1,67 @@
+<html>
+<head>
+  <title>Cecelious</title>
+
+  <style>
+    #cecelious-house{
+      height: 100%;
+      width: 100%;
+    }
+
+    img{
+      position: absolute;
+      width: 25%;
+      left: 25%;
+      -webkit-animation: dance 50s linear;
+    }
+
+    body{
+      background-color: lightgreen;
+      -webkit-animation: paintbackground 0.5s infinite;
+    }
+
+
+    @-webkit-keyframes paintbackground {
+      0%{
+        background-color: red;
+      }
+      50%{
+        background-color: blue;
+      }
+      100%{
+        background-color: red;
+      }
+    }
+
+
+  @-webkit-keyframes dance {
+    0%{
+      left: -50%
+    }
+    50%{
+      left: 50%
+    }
+    75%{
+      left: 100%
+    }
+    100%{
+      left: 25%
+    }
+  }
+
+
+
+
+  </style>
+
+</head>
+<body>
+
+  <div id='cecelious-house'>
+    <img src="/cecelious.gif" alt="">
+  </div>
+  <audio src="/CeceliousFunk.m4a" autoplay loop>
+  </audio>
+
+</body>
+</html>
